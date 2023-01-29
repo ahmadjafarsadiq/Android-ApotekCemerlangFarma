@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.jafarcode.apotekcemerlangfarma.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_order"
+            app:destination="@id/navigation_order" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.jafarcode.apotekcemerlangfarma.ui.order.OrderFragment"
+        android:label="@string/title_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_navigation_order_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.jafarcode.apotekcemerlangfarma.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_account_profile"
+            app:destination="@id/account_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/account_profile"
+        android:name="com.jafarcode.apotekcemerlangfarma.ui.profile.detailprofile.DetailAccountFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_account" />
+</navigation>

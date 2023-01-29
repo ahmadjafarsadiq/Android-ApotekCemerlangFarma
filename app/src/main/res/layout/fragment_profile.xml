@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFC"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivPoster"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="22dp"
+                android:src="@drawable/ic_picture_empty"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/idEdit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="115dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_border_color_24"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextView.PoppinsNormal18sp020202"
+            android:text="Ahmad Jafar Sadiq"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/TextView.PoppinsNormal14sp8D92A3"
+            android:text="ahmadjafar@gmail.com"
+            android:layout_marginBottom="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_marginTop="24dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:background="#FFF"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorFullWidth="false"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#020202"
+                app:tabIndicatorColor="#020202"
+                app:tabTextAppearance="@style/Tab"/>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

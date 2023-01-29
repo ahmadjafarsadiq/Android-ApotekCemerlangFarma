@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Apotek Cemerlang Farma</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="masuk">Masuk</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
+    <string name="title_profile">Profile</string>
+    <string name="edit_profil">Edit Profil</string>
+</resources>

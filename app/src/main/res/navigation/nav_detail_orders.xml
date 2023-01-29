@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentDetailOrders"
+    android:id="@+id/nav_detail">
+
+    <fragment
+        android:id="@+id/fragmentDetailOrders"
+        android:name="com.jafarcode.apotekcemerlangfarma.ui.order.detailorders.OrderDetailFragment"
+        tools:layout="@layout/fragment_order_detail">
+
+        <argument android:name="data"
+            android:defaultValue="@null"
+            app:argType=  "com.jafarcode.apotekcemerlangfarma.model.response.transaction.Data"
+            app:nullable="true"/>
+
+    </fragment>
+
+
+
+
+</navigation>

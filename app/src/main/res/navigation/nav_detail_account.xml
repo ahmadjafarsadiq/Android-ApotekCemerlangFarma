@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentDetailAccount"
+    android:id="@+id/nav_detail_account">
+
+
+    <fragment
+        android:id="@+id/fragmentDetailAccount"
+        android:name="com.jafarcode.apotekcemerlangfarma.ui.profile.detailprofile.DetailAccountFragment"
+        tools:layout="@layout/fragment_detail_account">
+
+    </fragment>
+
+
+
+</navigation>
